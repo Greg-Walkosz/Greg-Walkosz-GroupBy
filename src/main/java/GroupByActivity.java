@@ -60,6 +60,7 @@ public class GroupByActivity {
          * in the GROUP BY clause or an aggregate function.
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        sql = "SELECT COUNT(song), artist FROM song GROUP BY artist";
 
         Map<String, Integer> counts = new HashMap<>();
         try {
